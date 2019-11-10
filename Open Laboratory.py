@@ -23,6 +23,8 @@ mycursor.execute("CREATE TABLE IF NOT EXISTS `openlaboratory`.`lab_item` (`item_
 mycursor.execute("CREATE TABLE IF NOT EXISTS `openlaboratory`.`lab_ana` (`ana_id` INT NOT NULL AUTO_INCREMENT,`ana_name` VARCHAR(20) NOT NULL,`ana_descript` VARCHAR(20) NOT NULL, PRIMARY KEY (`ana_id`), UNIQUE INDEX `ana_name_UNIQUE` (`ana_name` ASC));")
 mycursor.execute("CREATE TABLE IF NOT EXISTS `openlaboratory`.`lab_res` (`res_id` INT NOT NULL AUTO_INCREMENT,`res_name` VARCHAR(20) NOT NULL,`res_descript` VARCHAR(20) NOT NULL, PRIMARY KEY (`res_id`), UNIQUE INDEX `res_name_UNIQUE` (`res_name` ASC));")
 
+# mySQL code samples
+
 newUserSQL="INSERT INTO lab_user (user_name, user_pass) VALUES (%s, %s);"
 newUser=("Milan", "stokic")
 #mycursor.execute(newUserSQL, newUser)
@@ -40,7 +42,8 @@ newItems=[("Solja3", "3"),
           ("Solja7", "3"),
           ("Solja8", "3")]
 #mycursor.executemany(newItemSQL, newItems)
-#pagination
+
+# Code for the pagination of the tables
 """
 resultsPerPage=5
 mycursor.execute("SELECT COUNT(*) FROM openlaboratory.lab_item WHERE item_name LIKE \"Solja%\";")
