@@ -1,5 +1,6 @@
 # mySQL connection to the python database
-
+# pylint: disable=F0401
+# pylint: disable=E0611
 import math 
 import mysql.connector 
 
