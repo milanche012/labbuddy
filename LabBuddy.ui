@@ -15,7 +15,7 @@
   </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>icons\png\id-card-3.png</normaloff>icons\png\id-card-3.png</iconset>
+    <normaloff>icons/png/id-card-3.png</normaloff>icons/png/id-card-3.png</iconset>
   </property>
   <property name="iconSize">
    <size>
@@ -26,14 +26,34 @@
   <widget class="QWidget" name="centralwidget">
    <layout class="QHBoxLayout" name="horizontalLayout">
     <item>
+     <widget class="QTabWidget" name="tabWidget_2">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Tab 1</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Tab 2</string>
+       </attribute>
+      </widget>
+     </widget>
+    </item>
+    <item alignment="Qt::AlignRight">
      <widget class="QTabWidget" name="tabWidget">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
       <property name="currentIndex">
        <number>0</number>
       </property>
       <widget class="QWidget" name="tab_3">
        <attribute name="icon">
         <iconset>
-         <normaloff>icons\png\user.png</normaloff>icons\png\user.png</iconset>
+         <normaloff>icons/png/user.png</normaloff>icons/png/user.png</iconset>
        </attribute>
        <attribute name="title">
         <string>Current User</string>
@@ -42,7 +62,7 @@
       <widget class="QWidget" name="tab_4">
        <attribute name="icon">
         <iconset>
-         <normaloff>icons\png\bookmark-1.png</normaloff>icons\png\bookmark-1.png</iconset>
+         <normaloff>icons/png/bookmark-1.png</normaloff>icons/png/bookmark-1.png</iconset>
        </attribute>
        <attribute name="title">
         <string>Edit Biography</string>
@@ -95,7 +115,7 @@
   <action name="actionServer">
    <property name="icon">
     <iconset>
-     <normaloff>icons\png\server-1.png</normaloff>icons\png\server-1.png</iconset>
+     <normaloff>icons/png/server-1.png</normaloff>icons/png/server-1.png</iconset>
    </property>
    <property name="text">
     <string>Server</string>
@@ -119,7 +139,7 @@
   <action name="actionCalendar">
    <property name="icon">
     <iconset>
-     <normaloff>icons\png\calendar-1.png</normaloff>icons\png\calendar-1.png</iconset>
+     <normaloff>icons/png/calendar-1.png</normaloff>icons/png/calendar-1.png</iconset>
    </property>
    <property name="text">
     <string>Calendar</string>
@@ -131,7 +151,7 @@
   <action name="actionCalculator">
    <property name="icon">
     <iconset>
-     <normaloff>icons\png\calculator.png</normaloff>icons\png\calculator.png</iconset>
+     <normaloff>icons/png/calculator.png</normaloff>icons/png/calculator.png</iconset>
    </property>
    <property name="text">
     <string>Calculator</string>
@@ -143,7 +163,7 @@
   <action name="actionProcedure">
    <property name="icon">
     <iconset>
-     <normaloff>icons\png\list-1.png</normaloff>icons\png\list-1.png</iconset>
+     <normaloff>icons/png/list-1.png</normaloff>icons/png/list-1.png</iconset>
    </property>
    <property name="text">
     <string>Procedure</string>
@@ -155,7 +175,7 @@
   <action name="actionAlarm">
    <property name="icon">
     <iconset>
-     <normaloff>icons\png\clock.png</normaloff>icons\png\clock.png</iconset>
+     <normaloff>icons/png/clock.png</normaloff>icons/png/clock.png</iconset>
    </property>
    <property name="text">
     <string>Alarm</string>
@@ -167,7 +187,7 @@
   <action name="actionResults">
    <property name="icon">
     <iconset>
-     <normaloff>icons\png\notepad-2.png</normaloff>icons\png\notepad-2.png</iconset>
+     <normaloff>icons/png/notepad-2.png</normaloff>icons/png/notepad-2.png</iconset>
    </property>
    <property name="text">
     <string>Results</string>
@@ -179,7 +199,7 @@
   <action name="actionSettings">
    <property name="icon">
     <iconset>
-     <normaloff>icons\png\settings-3.png</normaloff>icons\png\settings-3.png</iconset>
+     <normaloff>icons/png/settings-3.png</normaloff>icons/png/settings-3.png</iconset>
    </property>
    <property name="text">
     <string>Settings</string>
@@ -191,8 +211,8 @@
   <action name="actionMute">
    <property name="icon">
     <iconset>
-     <normaloff>icons\png\microphone.png</normaloff>
-     <normalon>icons\png\muted.png</normalon>icons\png\microphone.png</iconset>
+     <normaloff>icons/png/microphone.png</normaloff>
+     <normalon>icons/png/muted.png</normalon>icons/png/microphone.png</iconset>
    </property>
    <property name="text">
     <string>Mute</string>
@@ -204,7 +224,7 @@
   <action name="actionContact">
    <property name="icon">
     <iconset>
-     <normaloff>icons\png\smartphone-10.png</normaloff>icons\png\smartphone-10.png</iconset>
+     <normaloff>icons/png/smartphone-10.png</normaloff>icons/png/smartphone-10.png</iconset>
    </property>
    <property name="text">
     <string>Contact List</string>
@@ -224,16 +244,16 @@
   <connection>
    <sender>actionUser</sender>
    <signal>triggered()</signal>
-   <receiver>tabWidget</receiver>
-   <slot>setFocus()</slot>
+   <receiver>tabWidget_2</receiver>
+   <slot>show()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>-1</x>
      <y>-1</y>
     </hint>
     <hint type="destinationlabel">
-     <x>133</x>
-     <y>28</y>
+     <x>258</x>
+     <y>289</y>
     </hint>
    </hints>
   </connection>
