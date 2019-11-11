@@ -14,8 +14,8 @@
    <string>Lab Buddy</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="Resource.qrc">
-    <normaloff>:/newPrefix/148705-essential-collection/png/id-card-3.png</normaloff>:/newPrefix/148705-essential-collection/png/id-card-3.png</iconset>
+   <iconset>
+    <normaloff>icons\png\id-card-3.png</normaloff>icons\png\id-card-3.png</iconset>
   </property>
   <property name="iconSize">
    <size>
@@ -32,8 +32,8 @@
       </property>
       <widget class="QWidget" name="tab_3">
        <attribute name="icon">
-        <iconset resource="Resource.qrc">
-         <normaloff>:/newPrefix/148705-essential-collection/png/user.png</normaloff>:/newPrefix/148705-essential-collection/png/user.png</iconset>
+        <iconset>
+         <normaloff>icons\png\user.png</normaloff>icons\png\user.png</iconset>
        </attribute>
        <attribute name="title">
         <string>Current User</string>
@@ -41,8 +41,8 @@
       </widget>
       <widget class="QWidget" name="tab_4">
        <attribute name="icon">
-        <iconset resource="Resource.qrc">
-         <normaloff>:/newPrefix/148705-essential-collection/png/bookmark-1.png</normaloff>:/newPrefix/148705-essential-collection/png/bookmark-1.png</iconset>
+        <iconset>
+         <normaloff>icons\png\bookmark-1.png</normaloff>icons\png\bookmark-1.png</iconset>
        </attribute>
        <attribute name="title">
         <string>Edit Biography</string>
@@ -94,8 +94,8 @@
   </widget>
   <action name="actionServer">
    <property name="icon">
-    <iconset resource="Resource.qrc">
-     <normaloff>:/newPrefix/148705-essential-collection/png/server-1.png</normaloff>:/newPrefix/148705-essential-collection/png/server-1.png</iconset>
+    <iconset>
+     <normaloff>icons\png\server-1.png</normaloff>icons\png\server-1.png</iconset>
    </property>
    <property name="text">
     <string>Server</string>
@@ -106,8 +106,8 @@
   </action>
   <action name="actionUser">
    <property name="icon">
-    <iconset resource="Resource.qrc">
-     <normaloff>:/newPrefix/148705-essential-collection/png/users.png</normaloff>:/newPrefix/148705-essential-collection/png/users.png</iconset>
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/icons/png/users.png</normaloff>:/icons/icons/png/users.png</iconset>
    </property>
    <property name="text">
     <string>  User  </string>
@@ -118,8 +118,8 @@
   </action>
   <action name="actionCalendar">
    <property name="icon">
-    <iconset resource="Resource.qrc">
-     <normaloff>:/newPrefix/148705-essential-collection/png/calendar-1.png</normaloff>:/newPrefix/148705-essential-collection/png/calendar-1.png</iconset>
+    <iconset>
+     <normaloff>icons\png\calendar-1.png</normaloff>icons\png\calendar-1.png</iconset>
    </property>
    <property name="text">
     <string>Calendar</string>
@@ -130,8 +130,8 @@
   </action>
   <action name="actionCalculator">
    <property name="icon">
-    <iconset resource="Resource.qrc">
-     <normaloff>:/newPrefix/148705-essential-collection/png/calculator.png</normaloff>:/newPrefix/148705-essential-collection/png/calculator.png</iconset>
+    <iconset>
+     <normaloff>icons\png\calculator.png</normaloff>icons\png\calculator.png</iconset>
    </property>
    <property name="text">
     <string>Calculator</string>
@@ -142,8 +142,8 @@
   </action>
   <action name="actionProcedure">
    <property name="icon">
-    <iconset resource="Resource.qrc">
-     <normaloff>:/newPrefix/148705-essential-collection/png/list-1.png</normaloff>:/newPrefix/148705-essential-collection/png/list-1.png</iconset>
+    <iconset>
+     <normaloff>icons\png\list-1.png</normaloff>icons\png\list-1.png</iconset>
    </property>
    <property name="text">
     <string>Procedure</string>
@@ -154,8 +154,8 @@
   </action>
   <action name="actionAlarm">
    <property name="icon">
-    <iconset resource="Resource.qrc">
-     <normaloff>:/newPrefix/148705-essential-collection/png/clock.png</normaloff>:/newPrefix/148705-essential-collection/png/clock.png</iconset>
+    <iconset>
+     <normaloff>icons\png\clock.png</normaloff>icons\png\clock.png</iconset>
    </property>
    <property name="text">
     <string>Alarm</string>
@@ -166,8 +166,8 @@
   </action>
   <action name="actionResults">
    <property name="icon">
-    <iconset resource="Resource.qrc">
-     <normaloff>:/newPrefix/148705-essential-collection/png/notepad-2.png</normaloff>:/newPrefix/148705-essential-collection/png/notepad-2.png</iconset>
+    <iconset>
+     <normaloff>icons\png\notepad-2.png</normaloff>icons\png\notepad-2.png</iconset>
    </property>
    <property name="text">
     <string>Results</string>
@@ -178,8 +178,8 @@
   </action>
   <action name="actionSettings">
    <property name="icon">
-    <iconset resource="Resource.qrc">
-     <normaloff>:/newPrefix/148705-essential-collection/png/settings-3.png</normaloff>:/newPrefix/148705-essential-collection/png/settings-3.png</iconset>
+    <iconset>
+     <normaloff>icons\png\settings-3.png</normaloff>icons\png\settings-3.png</iconset>
    </property>
    <property name="text">
     <string>Settings</string>
@@ -190,9 +190,9 @@
   </action>
   <action name="actionMute">
    <property name="icon">
-    <iconset resource="Resource.qrc">
-     <normaloff>:/newPrefix/148705-essential-collection/png/microphone.png</normaloff>
-     <normalon>:/newPrefix/148705-essential-collection/png/muted.png</normalon>:/newPrefix/148705-essential-collection/png/microphone.png</iconset>
+    <iconset>
+     <normaloff>icons\png\microphone.png</normaloff>
+     <normalon>icons\png\muted.png</normalon>icons\png\microphone.png</iconset>
    </property>
    <property name="text">
     <string>Mute</string>
@@ -203,8 +203,8 @@
   </action>
   <action name="actionContact">
    <property name="icon">
-    <iconset resource="Resource.qrc">
-     <normaloff>:/newPrefix/148705-essential-collection/png/smartphone-10.png</normaloff>:/newPrefix/148705-essential-collection/png/smartphone-10.png</iconset>
+    <iconset>
+     <normaloff>icons\png\smartphone-10.png</normaloff>icons\png\smartphone-10.png</iconset>
    </property>
    <property name="text">
     <string>Contact List</string>
@@ -218,7 +218,7 @@
   <tabstop>tabWidget</tabstop>
  </tabstops>
  <resources>
-  <include location="Resource.qrc"/>
+  <include location="icons.qrc"/>
  </resources>
  <connections>
   <connection>
@@ -228,8 +228,8 @@
    <slot>setFocus()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>38</x>
-     <y>26</y>
+     <x>-1</x>
+     <y>-1</y>
     </hint>
     <hint type="destinationlabel">
      <x>133</x>
